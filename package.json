@@ -5,8 +5,12 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> dd13e7ccbeb0b456e9a2964e0876a24f960f0c3b
   },
   "author": "",
   "license": "ISC",
