@@ -26,9 +26,10 @@ const __dirname1 = path.resolve();
 if (process.env.NODE_ENV === "production") {
   console.log(__dirname1);
   app.use(express.static(path.join(__dirname1, "/frontend/build")));
-  console.log(path.join(__dirname1, "../frontend/build"));
+  console.log(path.resolve(__dirname1, "frontend", "build", "index.html"));
   app.get("*", (req, res) =>
-    res.sendFile(path.join(__dirname1, "/frontend/build/index.html"))
+    // res.sendFile(path.join(__dirname1, "/frontend/build/index.html"))
+    res.sendFile(path.resolve(__dirname1, "frontend", "build", "index.html"))
   );
 } else {
   app.get("/", (req, res) => {
