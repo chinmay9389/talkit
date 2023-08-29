@@ -30,6 +30,7 @@ import { Spinner } from "@chakra-ui/spinner";
 import NotificationBadge from "react-notification-badge";
 import { Effect } from "react-notification-badge";
 import { getSender } from "../../config/ChatLogics";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const SideDrawer = () => {
   const [search, setSearch] = useState("");
@@ -130,7 +131,7 @@ const SideDrawer = () => {
       >
         <Tooltip label="Search users" hasArrow placement="bottom-end">
           <Button variant="ghost" onClick={onOpen}>
-            <i className="fas fa-search"></i>
+            <AiOutlineSearch size={15} />
             <Text display={{ base: "none", md: "flex" }} px="4">
               Search User
             </Text>
